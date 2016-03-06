@@ -38,7 +38,7 @@ public class RestControllerTest {
     public ResponseEntity<People> peoplePost(@RequestBody People people, UriComponentsBuilder ucb){
         HttpHeaders headers = new HttpHeaders();
         URI locationUri = ucb
-                .path("people")
+                .path("/people/")
                 .path(String.valueOf(people.getId()))
                 .build()
                 .toUri();
