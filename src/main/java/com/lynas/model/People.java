@@ -3,16 +3,16 @@ package com.lynas.model;
 /**
  * Created by LynAs on 05-Mar-16
  */
-public class Test {
+public class People {
     private int id;
     private String name;
 
-    public Test(int id, String name) {
+    public People(int id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public Test() {
+    public People() {
     }
 
     public int getId() {
