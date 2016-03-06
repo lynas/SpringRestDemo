@@ -18,10 +18,10 @@ import java.net.URI;
 @RestController
 public class RestControllerTest {
     public static final String APPLICATION_JSON = "application/json";
-    @RequestMapping(value = "/people", method = RequestMethod.GET)
-    public People people(){
+    @RequestMapping(value = "/people/{id}", method = RequestMethod.GET)
+    public People people(@PathVariable int id){
         //throw new PeopleNotFoundException(1);
-        return new People(1, "sazzad");
+        return new People(id, "sazzad");
     }
 
 
